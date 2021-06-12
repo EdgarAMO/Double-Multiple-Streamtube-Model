@@ -19,9 +19,7 @@ float integrate(float q[NZ][NT], int NZ, int NT, float DZ, float DT);
 
 void parse(std::string cname, float C[ROWS][COLS]); 
 
-float get_coeff(float aa, float re, float C[ROWS][COLS], 
-									float AA[ROWS], 
-									float RN[COLS]);
+float get_coeff(float aa, float re, float C[ROWS][COLS], float AA[ROWS], float RN[COLS]);
 
 int main() {
 
@@ -41,7 +39,7 @@ int main() {
 	float n2[NZ][NT];	// downwind normal coefficient
 	float t1[NZ][NT];	// upwind tangential coefficient
 	float t2[NZ][NT];	// downwind tangential coefficient
-	float q1[NZ][NT];   // upwind local torque
+	float q1[NZ][NT];   	// upwind local torque
 	float q2[NZ][NT];	// downwind local torque
 
 	float CL_TABLE[ROWS][COLS];
